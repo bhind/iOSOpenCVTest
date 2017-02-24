@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A5F0131DF9D0099F463E11 /* Pods_iOSOpenCVTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B254A491BA7F253C436CB5 /* Pods_iOSOpenCVTestUITests.framework */; };
+		666CB6D2C0177EDF384896CB /* Pods_iOSOpenCVTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1433574EAC50F46A7A199E08 /* Pods_iOSOpenCVTest.framework */; };
 		9ED7CAD71E5FB65A0005D590 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED7CAD61E5FB65A0005D590 /* AppDelegate.swift */; };
 		9ED7CAD91E5FB65A0005D590 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED7CAD81E5FB65A0005D590 /* ViewController.swift */; };
 		9ED7CADC1E5FB65A0005D590 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED7CADA1E5FB65A0005D590 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		9ED7CAE11E5FB65A0005D590 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED7CADF1E5FB65A0005D590 /* LaunchScreen.storyboard */; };
 		9ED7CAEC1E5FB65B0005D590 /* iOSOpenCVTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED7CAEB1E5FB65B0005D590 /* iOSOpenCVTestTests.swift */; };
 		9ED7CAF71E5FB65B0005D590 /* iOSOpenCVTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED7CAF61E5FB65B0005D590 /* iOSOpenCVTestUITests.swift */; };
+		BF9FCF3E8452087018F1D816 /* Pods_iOSOpenCVTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5684B3CCD05D7ED3427358 /* Pods_iOSOpenCVTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D5684B3CCD05D7ED3427358 /* Pods_iOSOpenCVTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSOpenCVTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1433574EAC50F46A7A199E08 /* Pods_iOSOpenCVTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSOpenCVTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		150A8444905837CC92E3E6CB /* Pods-iOSOpenCVTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSOpenCVTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSOpenCVTest/Pods-iOSOpenCVTest.release.xcconfig"; sourceTree = "<group>"; };
+		25FBC01F6014EE841AC2E828 /* Pods-iOSOpenCVTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSOpenCVTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSOpenCVTestUITests/Pods-iOSOpenCVTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		30244E374C4823F763CC5229 /* Pods-iOSOpenCVTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSOpenCVTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSOpenCVTestTests/Pods-iOSOpenCVTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F63BF50A1FCEA271D37B6C3 /* Pods-iOSOpenCVTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSOpenCVTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSOpenCVTestTests/Pods-iOSOpenCVTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84E5AC5931380F2EEF76D267 /* Pods-iOSOpenCVTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSOpenCVTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSOpenCVTestUITests/Pods-iOSOpenCVTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9ED7CAD31E5FB65A0005D590 /* iOSOpenCVTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSOpenCVTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED7CAD61E5FB65A0005D590 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ED7CAD81E5FB65A0005D590 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		9ED7CAF21E5FB65B0005D590 /* iOSOpenCVTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSOpenCVTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED7CAF61E5FB65B0005D590 /* iOSOpenCVTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSOpenCVTestUITests.swift; sourceTree = "<group>"; };
 		9ED7CAF81E5FB65B0005D590 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C58467BF88160C83A482C92F /* Pods-iOSOpenCVTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSOpenCVTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSOpenCVTest/Pods-iOSOpenCVTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C9B254A491BA7F253C436CB5 /* Pods_iOSOpenCVTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSOpenCVTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666CB6D2C0177EDF384896CB /* Pods_iOSOpenCVTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9FCF3E8452087018F1D816 /* Pods_iOSOpenCVTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A5F0131DF9D0099F463E11 /* Pods_iOSOpenCVTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B2277191F39DA587F7F443E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C58467BF88160C83A482C92F /* Pods-iOSOpenCVTest.debug.xcconfig */,
+				150A8444905837CC92E3E6CB /* Pods-iOSOpenCVTest.release.xcconfig */,
+				7F63BF50A1FCEA271D37B6C3 /* Pods-iOSOpenCVTestTests.debug.xcconfig */,
+				30244E374C4823F763CC5229 /* Pods-iOSOpenCVTestTests.release.xcconfig */,
+				84E5AC5931380F2EEF76D267 /* Pods-iOSOpenCVTestUITests.debug.xcconfig */,
+				25FBC01F6014EE841AC2E828 /* Pods-iOSOpenCVTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9310D0E03745BBEFA21F2C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1433574EAC50F46A7A199E08 /* Pods_iOSOpenCVTest.framework */,
+				0D5684B3CCD05D7ED3427358 /* Pods_iOSOpenCVTestTests.framework */,
+				C9B254A491BA7F253C436CB5 /* Pods_iOSOpenCVTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9ED7CACA1E5FB65A0005D590 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				9ED7CAEA1E5FB65B0005D590 /* iOSOpenCVTestTests */,
 				9ED7CAF51E5FB65B0005D590 /* iOSOpenCVTestUITests */,
 				9ED7CAD41E5FB65A0005D590 /* Products */,
+				3B2277191F39DA587F7F443E /* Pods */,
+				9310D0E03745BBEFA21F2C6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ED7CAFB1E5FB65B0005D590 /* Build configuration list for PBXNativeTarget "iOSOpenCVTest" */;
 			buildPhases = (
+				5890EA83232AA8A500E8C2E2 /* [CP] Check Pods Manifest.lock */,
 				9ED7CACF1E5FB65A0005D590 /* Sources */,
 				9ED7CAD01E5FB65A0005D590 /* Frameworks */,
 				9ED7CAD11E5FB65A0005D590 /* Resources */,
+				AAB6642F8ADBB689C29D05B1 /* [CP] Embed Pods Frameworks */,
+				B481A99F7D0C389D8D7AE105 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ED7CAFE1E5FB65B0005D590 /* Build configuration list for PBXNativeTarget "iOSOpenCVTestTests" */;
 			buildPhases = (
+				01EA0A5053DA3E8D7FF2D8BB /* [CP] Check Pods Manifest.lock */,
 				9ED7CAE31E5FB65B0005D590 /* Sources */,
 				9ED7CAE41E5FB65B0005D590 /* Frameworks */,
 				9ED7CAE51E5FB65B0005D590 /* Resources */,
+				99212A77F637E2D3E3EAFAE4 /* [CP] Embed Pods Frameworks */,
+				B1E61C30891EE980A1F2F0A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9ED7CB011E5FB65B0005D590 /* Build configuration list for PBXNativeTarget "iOSOpenCVTestUITests" */;
 			buildPhases = (
+				02DADF16FED1B91683A7896F /* [CP] Check Pods Manifest.lock */,
 				9ED7CAEE1E5FB65B0005D590 /* Sources */,
 				9ED7CAEF1E5FB65B0005D590 /* Frameworks */,
 				9ED7CAF01E5FB65B0005D590 /* Resources */,
+				C05AF625B5B3AC26D3CB2149 /* [CP] Embed Pods Frameworks */,
+				3ABBA422FA4B19BEE0FEEBA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01EA0A5053DA3E8D7FF2D8BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		02DADF16FED1B91683A7896F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3ABBA422FA4B19BEE0FEEBA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSOpenCVTestUITests/Pods-iOSOpenCVTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5890EA83232AA8A500E8C2E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99212A77F637E2D3E3EAFAE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSOpenCVTestTests/Pods-iOSOpenCVTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB6642F8ADBB689C29D05B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSOpenCVTest/Pods-iOSOpenCVTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E61C30891EE980A1F2F0A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSOpenCVTestTests/Pods-iOSOpenCVTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B481A99F7D0C389D8D7AE105 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSOpenCVTest/Pods-iOSOpenCVTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05AF625B5B3AC26D3CB2149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSOpenCVTestUITests/Pods-iOSOpenCVTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9ED7CACF1E5FB65A0005D590 /* Sources */ = {
@@ -410,6 +597,7 @@
 		};
 		9ED7CAFC1E5FB65B0005D590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C58467BF88160C83A482C92F /* Pods-iOSOpenCVTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSOpenCVTest/Info.plist;
@@ -423,6 +611,7 @@
 		};
 		9ED7CAFD1E5FB65B0005D590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150A8444905837CC92E3E6CB /* Pods-iOSOpenCVTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSOpenCVTest/Info.plist;
@@ -436,6 +625,7 @@
 		};
 		9ED7CAFF1E5FB65B0005D590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F63BF50A1FCEA271D37B6C3 /* Pods-iOSOpenCVTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -450,6 +640,7 @@
 		};
 		9ED7CB001E5FB65B0005D590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30244E374C4823F763CC5229 /* Pods-iOSOpenCVTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -464,6 +655,7 @@
 		};
 		9ED7CB021E5FB65B0005D590 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E5AC5931380F2EEF76D267 /* Pods-iOSOpenCVTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = iOSOpenCVTestUITests/Info.plist;
@@ -477,6 +669,7 @@
 		};
 		9ED7CB031E5FB65B0005D590 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25FBC01F6014EE841AC2E828 /* Pods-iOSOpenCVTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = iOSOpenCVTestUITests/Info.plist;
