@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,20 +21,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-LY-9iV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EwN-LY-9iV">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EwN-LY-9iV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Cnj-Uz-yRs"/>
-                            <constraint firstItem="EwN-LY-9iV" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HgQ-kZ-bws"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EwN-LY-9iV" secondAttribute="bottom" id="QUw-Qq-Z7d"/>
-                            <constraint firstItem="EwN-LY-9iV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dRV-pa-GER"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EwN-LY-9iV" secondAttribute="bottom" id="KpW-ZF-O7T"/>
+                            <constraint firstItem="EwN-LY-9iV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gwc-et-XLE"/>
+                            <constraint firstItem="EwN-LY-9iV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q3O-qb-qSh"/>
+                            <constraint firstAttribute="trailing" secondItem="EwN-LY-9iV" secondAttribute="trailing" id="tpm-XF-pFK"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="EwN-LY-9iV" id="43b-9a-TSM"/>
+                        <outlet property="imageView" destination="EwN-LY-9iV" id="RJa-iZ-Pug"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

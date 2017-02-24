@@ -13,7 +13,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     @IBOutlet weak var imageView: UIImageView!
 
-    var session: AVCaptureSession!
+    var session: AVCaptureSession! = AVCaptureSession()
     var device: AVCaptureDevice!
     var output: AVCaptureVideoDataOutput!
     
@@ -22,6 +22,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         // Do any additional setup after loading the view, typically from a nib.
         if(self.initCamera()) {
             self.session.startRunning()
+        } else {
+            NSLog("initCamera error occured.")
         }
     }
 
@@ -31,33 +33,27 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     private func initCamera() -> Bool {
-        self.session = AVCaptureSession()
-        self.session.sessionPreset = AVCaptureSessionPreset1280x720
+        self.session.sessionPreset = AVCaptureSessionPresetHigh
         self.device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         do {
             let input = try AVCaptureDeviceInput(device: self.device) as AVCaptureInput
             self.session.addInput(input)
-        } catch {
-            return false
-        }
         
-        self.output = AVCaptureVideoDataOutput()
-        self.output.videoSettings = [kCVPixelBufferPixelFormatTypeKey as AnyHashable: kCVPixelFormatType_32BGRA]
-
-        do {
+            self.output = AVCaptureVideoDataOutput()
+            self.output.videoSettings = [kCVPixelBufferPixelFormatTypeKey as NSString: kCVPixelFormatType_32BGRA]
             try self.device.lockForConfiguration()
             self.device.activeVideoMinFrameDuration = CMTimeMake(1, 15)
             self.device.unlockForConfiguration()
+            let queue = DispatchQueue(label: "site.bhind.queue")
+            self.output.setSampleBufferDelegate(self, queue: queue)
+            
+            self.output.alwaysDiscardsLateVideoFrames = true
+            
+            self.session.addOutput(self.output)
         } catch {
             return false
         }
         
-        let queue: DispatchQueue = DispatchQueue(label: "myqueue")
-        self.output.setSampleBufferDelegate(self, queue: queue)
-        
-        self.output.alwaysDiscardsLateVideoFrames = true
-        
-        self.session.addOutput(self.output)
         
         for connection in self.output.connections {
             if let connection_buf = connection as? AVCaptureConnection {
@@ -70,10 +66,9 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         return true
     }
 
-    func captureOutput(_ captureOutput: AVCaptureOutput!, didDrop sampleBuffer: CMSampleBuffer!, from connection: AVCaptureConnection!) {
-        NSLog("coco")
+    func captureOutput(_: AVCaptureOutput!, didOutputSampleBuffer: CMSampleBuffer!, from: AVCaptureConnection!) {
         DispatchQueue.main.async( execute: {
-            self.imageView.image = self.imageFromSampleBuffer(samplebuffer: sampleBuffer)
+            self.imageView.image = self.imageFromSampleBuffer(samplebuffer: didOutputSampleBuffer)
         })
     }
     
