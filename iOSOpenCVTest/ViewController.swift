@@ -92,8 +92,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         let image: CGImage = new_context.makeImage()!
         
         // UIImageを作成
-        let result: UIImage = UIImage(cgImage: image)
-        
+        let rawImage: UIImage = UIImage(cgImage: image)
+        let result: UIImage = OpenCVProcess.sobelFilter(rawImage)
         return result
     }
 
