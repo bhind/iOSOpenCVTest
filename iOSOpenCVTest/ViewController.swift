@@ -17,6 +17,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     var device: AVCaptureDevice!
     var output: AVCaptureVideoDataOutput!
     
+    let opencvprocess: OpenCVProcess = OpenCVProcess()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -67,7 +69,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
 
     func captureOutput(_: AVCaptureOutput!, didOutputSampleBuffer: CMSampleBuffer!, from: AVCaptureConnection!) {
-        DispatchQueue.main.async( execute: {
+        DispatchQueue.main.sync( execute: {
             self.imageView.image = self.imageFromSampleBuffer(samplebuffer: didOutputSampleBuffer)
         })
     }
@@ -93,7 +95,8 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         // UIImageを作成
         let rawImage: UIImage = UIImage(cgImage: image)
-        let result: UIImage = OpenCVProcess.sobelFilter(rawImage)
+        // let result: UIImage = OpenCVProcess.sobelFilter(rawImage)
+        let result: UIImage = self.opencvprocess.recognizeFace(rawImage)
         return result
     }
 

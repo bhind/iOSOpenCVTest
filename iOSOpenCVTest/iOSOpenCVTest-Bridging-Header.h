@@ -10,4 +10,6 @@
 
 @interface OpenCVProcess: NSObject
 +(UIImage*) SobelFilter:(UIImage*)image;
+- (id)init;
+-(UIImage*) recognizeFace:(UIImage*)image;
 @end
